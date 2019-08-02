@@ -1,0 +1,132 @@
+.header a {
+	text-decoration: none;
+}
+
+.wrap_content {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header-top {
+	background-color: #d65900;
+	padding: 11px 0;
+}
+
+.header-top a {
+	padding: 12px 15px 3px 15px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.header-top a:first-child {
+    background-image: url(../images/Forma_1_copy.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.header-top a:last-child {
+    background-image: url(../images/Ellipse_2_copy.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+}
+
+.header-mid {
+	background-color: #f96a04;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 14px;
+}
+.header-mid a {
+	color: #fff;
+}
+.header-bottom {
+	padding: 15px 0
+}
+.header-bottom a {
+	color: #000;
+}
+.logo {
+	width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+#search {
+	float: left;
+	width: 60%;
+}
+#search form {
+	display: inline-flex;
+	width: 100%;
+}
+.submit {
+  background-color: #d65900;
+  background-image: url(../images/icon-search.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: medium none;
+  height: 42px;
+  right: 1px;
+  top: 1px;
+  width: 70px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.text-search {
+    background-color: #e9e9ea;
+    border: 1px solid #fff;
+    color: #7d7d7d;
+    font-size: 14px;
+    height: 42px;
+    padding-left: 10px;
+    width: 100%;
+    font-style: oblique;
+}
+.popularly {
+	padding-top: 15px;
+}
+.popularly ul {
+	display: inline-flex;
+}
+.popularly li {
+	padding-right: 15px;
+}
+.notification {
+	padding: 12px 23px;
+}
+.user {
+	display: inline-flex;
+}
+.text-user {
+	padding: 7px 15px;
+}
+.menu ul {
+	display: inline-flex;
+}
+.menu li {
+	padding-right: 30px;
+	font-size: 14px;
+}
+.slideshow {
+	background-image: url(../images/Layer_2.png);
+	height: 500px;
+}
+.wrap-slide {
+	margin-left: 25%;
+	padding-top: 75px;
+}
+.wrap-slide .description {
+	margin-top: 20px;
+	font-family: 'UTMAvo';
+	font-size: 54.26px;
+	color: #fff;
+}
+.wrap-slide span {
+	display: inline-block;
+	padding: 15px 35px;
+	margin-top: 22px;
+	font-size: 18px;
+	color: #4877d1;
+	background-color: #fff;
+}
