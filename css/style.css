@@ -1,5 +1,4 @@
-.header a {
-	text-decoration: none;
+.header {
 }
 
 .wrap_content {
@@ -129,4 +128,155 @@
 	font-size: 18px;
 	color: #4877d1;
 	background-color: #fff;
+}
+.owl-dots {
+	position: relative;
+	bottom: 50px;
+}
+.danh-muc{
+}
+.category {
+	width: 20%;
+	padding-right: 15px;
+	float: left;
+	background-repeat: no-repeat;
+}
+.category p {
+	position: relative;
+    top: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px
+}
+.title {
+	margin-top: 45px;
+}
+.item-favourite {
+	width: 70%;
+	float: right;
+}
+.item-favourite .item {
+	float: right;
+	display: inline-flex;
+	margin-right: 50px;
+}
+
+.deal-hot-trong-ngay, .voucher-qua-tang, .san-pham-ua-thich {
+	display: inline-flex;
+}
+.deal-hot-trong-ngay p {
+	padding: 5px;
+	color: #ed1c24;
+}
+.deal-hot-danh-sach {
+	margin-top: 50px;
+}
+.san-pham {
+	width: 15.9%;
+	float: left;
+	border: 1px solid #e1e1e1;
+	margin: 10px 10px 0 0;
+}
+.deal {
+	height: 243px;
+}
+.vou {
+	height: 276px;
+}
+.san-pham span{
+	padding: 5px 20px;
+	background-color: #f96a04;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	position: relative;
+	left: 23px;
+}
+#san-pham-6, #voucher-6, #voucher-12, #voucher-18, #voucher-24{
+	margin-right: 0
+}
+.hinh-anh {
+	height: 160px;
+}
+.hinh-anh img{
+	position: relative;
+    top: 40px;
+    left: 40px;
+}
+.a-day-roi {
+	position: relative;
+	top: 20px;
+}
+.chi-tiet-san-pham {
+	margin: 0 10px;
+}
+.chi-tiet-san-pham p {
+	font-size: 13px;
+}
+.chi-tiet-san-pham span {
+	background-color: #fff;
+    position: unset;
+    display: inline-flex;
+    padding: 5px 0;
+}
+#favourite a {
+	padding: 5px 20px;
+}
+.partner li {
+	padding: 15px 20px;
+	display: inline-flex;
+	margin-right: 18px;
+}
+.payment li {
+	padding: 15px 4px;
+	display: inline-flex;
+	margin-right: 15px;
+}
+.partner li:last-child, .payment li:last-child {
+	margin-right: 0;
+}
+#footer {
+	background-color: #215278;
+	color: #fff;
+	padding-top: 40px;
+}
+#footer a {
+	color: #fff;
+}
+.footer-1, .footer-2 {
+	width: 50%;
+}
+.menu-footer {
+	margin-top: 30px;
+}
+.menu-footer li {
+	padding: 15px 0;
+}
+.menu-footer ul {
+	margin-right: 100px;
+}
+.menu-footer ul:last-child {
+	margin-right: 0;
+}
+#email {
+	margin-top: 15px;
+}
+.email {
+	width: 75%;
+	height: 44px;
+	background-color: #0f324d;
+	padding: 0 15px;
+	border-radius: 5px;
+	color: #fff;
+}
+.submit-email {
+	height: 44px;
+	background-color: #e97d00;
+	margin-left: 15px;
+	padding: 0 20px;
+	border-radius: 5px;
+	color: #fff;
+}
+.stamp{
+	margin: 30px 0;
 }

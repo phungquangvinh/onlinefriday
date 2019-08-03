@@ -51,9 +51,13 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  /*box-sizing: content-box;
+  height: 0;
+  overflow: visible;*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 
 /**
@@ -354,7 +358,7 @@ template {
   	border: 0;
   	font-size: 100%;
 }
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p{
   margin: 0;
   padding: 0;
   border: 0;
