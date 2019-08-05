@@ -5,24 +5,59 @@ $( document ).ready(function() {
 	    autoplay:true,
 	    autoplayTimeout:5000,
 	});
-});
 
-$( document ).ready(function () {
-	$('.owl-carousel.item').owlCarousel({
+	$('.item-favourite .owl-carousel.item').owlCarousel({
 	    loop:true,
-	    margin:0,
 	    nav:true,
-	    dots:false,
+	    center:true,
+	    dots: false,
 	    responsive:{
 	        0:{
-	            items:1
+	            items:2
 	        },
-	        600:{
+	        375:{
 	            items:4
 	        },
-	        1000:{
+	        768:{
+	            items:6
+	        },
+	        1024:{
 	            items:8
 	        }
 	    }
-	})
-})
+	});
+
+	$('.owl-carousel.partner-list').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    dots: false,
+	    responsive:{
+	        0:{
+	            items:2
+	        },
+	        768:{
+	            items:4
+	        },
+	        1024:{
+	            items:5
+	        }
+	    }
+	});
+
+	$('.owl-carousel.payment-list').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    dots: false,
+	    responsive:{
+	        0:{
+	            items:2
+	        },
+	        768:{
+	            items:4
+	        },
+	        1024:{
+	            items:6
+	        }
+	    }
+	});
+});

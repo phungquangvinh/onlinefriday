@@ -107,6 +107,14 @@
 	padding-right: 30px;
 	font-size: 14px;
 }
+.menu-link {
+	background-color: #f3f3f3;
+	font-size: 14px;
+	padding: 10px 0;
+}
+.menu-link a {
+	color: #787878;
+}
 .slideshow {
 	background-image: url(../images/Layer_2.png);
 	height: 500px;
@@ -115,7 +123,7 @@
 	margin-left: 25%;
 	padding-top: 75px;
 }
-.wrap-slide .description {
+.wrap-slide .text-slide {
 	margin-top: 20px;
 	font-family: 'UTMAvo';
 	font-size: 54.26px;
@@ -152,21 +160,37 @@
 	margin-top: 45px;
 }
 .item-favourite {
-	width: 70%;
+	width: 66%;
 	float: right;
 }
-.item-favourite .item {
-	float: right;
-	display: inline-flex;
-	margin-right: 50px;
+.item-image {
+	display: inline-block;
 }
-
+.item-image:hover {
+	background-image: url(images/Ellipse-3.png);
+	background-repeat: no-repeat;
+	background-position-x: -14px;
+}
+.item button.owl-prev {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+}
+.item button.owl-next {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
 .deal-hot-trong-ngay, .voucher-qua-tang, .san-pham-ua-thich {
 	display: inline-flex;
 }
 .deal-hot-trong-ngay p {
-	padding: 5px;
+	padding: 2px 4px;
 	color: #ed1c24;
+}
+.deal-hot-trong-ngay .date-time {
+	display: inherit;
+    margin-left: 20px;
 }
 .deal-hot-danh-sach {
 	margin-top: 50px;
@@ -182,6 +206,9 @@
 }
 .vou {
 	height: 276px;
+}
+.vou: hover {
+	background-color: #c1c1c1;
 }
 .san-pham span{
 	padding: 5px 20px;
@@ -222,18 +249,31 @@
 #favourite a {
 	padding: 5px 20px;
 }
-.partner li {
+.partner, .payment {
+	text-align: center;
+}
+.partner-logo:hover, .payment-logo:hover {
+	border: 1px solid #ebebeb
+}
+.partner .partner-logo {
 	padding: 15px 20px;
-	display: inline-flex;
+	display: inline-block;
 	margin-right: 18px;
 }
-.payment li {
+.payment .payment-logo {
 	padding: 15px 4px;
-	display: inline-flex;
+	display: inline-block;
 	margin-right: 15px;
 }
-.partner li:last-child, .payment li:last-child {
-	margin-right: 0;
+.partner button.owl-prev, .payment button.owl-prev {
+	position: absolute;
+	bottom: 40%;
+	left: 0%;
+}
+.partner button.owl-next, .payment button.owl-next {
+	position: absolute;
+	bottom: 40%;
+	right: 0%;
 }
 #footer {
 	background-color: #215278;
@@ -254,9 +294,11 @@
 }
 .menu-footer ul {
 	margin-right: 100px;
+	list-style: inherit;
 }
 .menu-footer ul:last-child {
 	margin-right: 0;
+	list-style: none;
 }
 #email {
 	margin-top: 15px;
@@ -279,4 +321,38 @@
 }
 .stamp{
 	margin: 30px 0;
+}
+
+.owl-nav span {
+	font-size: 40px;
+}
+.detail-product {
+	margin-top: 50px;
+}
+.image-product {
+	width: 25%;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+	padding: 50px 0;
+}
+.description {
+	width: 50%;
+	padding: 0 28px;
+}
+.info {
+	margin-bottom: 25px;
+}
+.description .text-box {
+	width: 100%;
+	height: 265px;
+	border: 1px solid #f96a04;
+}
+.description span {
+	color: #ed1c24;
+	font-size: 30px;
+}
+.time-up {
+	width: 25%;
+	height: 395px;
+	border: 1px solid #e1e1e1;
 }
