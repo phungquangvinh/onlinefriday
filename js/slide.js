@@ -31,6 +31,7 @@ $( document ).ready(function() {
 	    loop:true,
 	    nav:true,
 	    dots: false,
+	    margin: 15,
 	    responsive:{
 	        0:{
 	            items:2
@@ -48,6 +49,7 @@ $( document ).ready(function() {
 	    loop:true,
 	    nav:true,
 	    dots: false,
+	    margin: 15,
 	    responsive:{
 	        0:{
 	            items:2
