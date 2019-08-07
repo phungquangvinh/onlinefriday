@@ -1,14 +1,8 @@
 $( document ).ready(function() {
-    $('.owl-carousel.banner').owlCarousel({
-	    loop:true,
-	    items: 1,
-	    autoplay:true,
-	    autoplayTimeout:5000,
-	});
-
-	$('.item-favourite .owl-carousel.item').owlCarousel({
+	const options_item = {
 	    loop:true,
 	    nav:true,
+	    navText: [`<i class="fa fa-angle-left" aria-hidden="true"></i>`,`<i class="fa fa-angle-right" aria-hidden="true"></i>`],
 	    center:true,
 	    dots: false,
 	    responsive:{
@@ -25,11 +19,12 @@ $( document ).ready(function() {
 	            items:8
 	        }
 	    }
-	});
+	};
 
-	$('.owl-carousel.partner-list').owlCarousel({
+	const options_list = {
 	    loop:true,
 	    nav:true,
+	    navText: [`<i class="fa fa-angle-left" aria-hidden="true"></i>`,`<i class="fa fa-angle-right" aria-hidden="true"></i>`],
 	    dots: false,
 	    margin: 15,
 	    responsive:{
@@ -43,11 +38,23 @@ $( document ).ready(function() {
 	            items:5
 	        }
 	    }
+	};
+
+    $('.owl-carousel.banner').owlCarousel({
+	    loop:true,
+	    items: 1,
+	    autoplay:true,
+	    autoplayTimeout:5000,
 	});
+
+	$('.item-favourite .owl-carousel.item').owlCarousel(options_item);
+
+	$('.owl-carousel.partner-list').owlCarousel(options_list);
 
 	$('.owl-carousel.payment-list').owlCarousel({
 	    loop:true,
 	    nav:true,
+	    navText: [`<i class="fa fa-angle-left" aria-hidden="true"></i>`,`<i class="fa fa-angle-right" aria-hidden="true"></i>`],
 	    dots: false,
 	    margin: 15,
 	    responsive:{

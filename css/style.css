@@ -63,17 +63,18 @@
 	width: 100%;
 }
 .submit {
-  background-color: #d65900;
-  background-image: url(../images/icon-search.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  border: medium none;
-  height: 42px;
-  right: 1px;
-  top: 1px;
-  width: 70px;
-  border: 1px solid #fff;
-  cursor: pointer;
+  	background-color: #d65900;
+  	background-image: url(../images/icon-search.png);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	border: medium none;
+  	height: 42px;
+  	position: relative;
+    right: 0px;
+    top: 0px;
+  	width: 70px;
+  	border: 1px solid #fff;
+  	cursor: pointer;
 }
 .text-search {
     border: 1px solid #fff;
@@ -179,14 +180,21 @@ a.item-image:hover {
 }
 .item button.owl-prev {
 	position: absolute;
-	bottom: 0%;
+	bottom: 23%;
 	left: 0%;
+	outline: unset;
 }
 .item button.owl-next {
 	position: absolute;
-	bottom: 0%;
+	bottom: 23%;
 	right: -2%;
+	outline: unset;
 }
+i.fa.fa-angle-left, i.fa.fa-angle-right {
+    font-size: 23px;
+    color: #696969;
+}
+
 .deal-hot-trong-ngay, .voucher-qua-tang, .san-pham-ua-thich {
 	display: inline-flex;
 }
@@ -213,7 +221,7 @@ a.item-image:hover {
 .vou {
 	height: 276px;
 }
-.vou: hover {
+.vou:hover {
 	background-color: #c1c1c1;
 }
 .san-pham span{
@@ -245,18 +253,33 @@ a.item-image:hover {
 }
 .chi-tiet-san-pham p {
 	font-size: 13px;
+	margin-bottom: 10px
 }
 .chi-tiet-san-pham span {
 	background-color: #fff;
     position: unset;
-    display: inline-flex;
     padding: 5px 0;
+}
+.chi-tiet-san-pham span h5{
+	color: #eb7e00;
+    font-size: 16px;
+    float: left;
+}
+.chi-tiet-san-pham span del {
+	color: #215278;
+    float: right;
+    font-size: 15px;
 }
 .deal-hot-danh-sach a {
 	padding: 5px 20px;
 }
+#deal-danh-cho-ban .deal-hot-danh-sach a {
+	padding: 0;
+	color: #000;
+}
 .partner, .payment {
 	text-align: center;
+	margin-top: 40px
 }
 .partner-logo:hover, .payment-logo:hover {
 	border-color: #ebebeb !important
@@ -267,11 +290,14 @@ a.item-image:hover {
     width: 100%;
     position: relative;
     border: 1px solid #fff;
+    margin-top: 20px
 }
 .payment .payment-logo {
 	padding: 15px 4px;
 	display: inline-block;
+	border: 1px solid #fff;
 	height: 110px;
+	margin-top: 20px;
 }
 .partner .partner-logo img, .payment .payment-logo img{
 	width: 100%;
@@ -292,12 +318,13 @@ a.item-image:hover {
 	position: absolute;
 	bottom: 40%;
 	left: -2%;
+	outline: unset;
 }
 .partner button.owl-next, .payment button.owl-next {
 	position: absolute;
 	bottom: 40%;
 	right: -2%;
-	ackground-image: url(../images/nav_05.png);
+	outline: unset;
 }
 #footer {
 	background-color: #215278;
@@ -348,10 +375,6 @@ a.item-image:hover {
 	margin: 30px 0;
 }
 
-.owl-nav span {
-	font-size: 40px;
-	color: #696969;
-}
 .detail-product {
 	margin-top: 50px;
 	height: 400px;
@@ -371,10 +394,12 @@ a.item-image:hover {
 }
 .description .text-box {
 	width: 100%;
-	height: 265px;
 	border: 1px solid #f96a04;
-	overflow: auto;
 	padding: 16px;
+}
+.text-box-css {
+	height: 233px;
+	overflow: auto;
 }
 .description span {
 	color: #ed1c24;
@@ -409,11 +434,11 @@ a.item-image:hover {
 }
 .download-app {
 	background-color: #e1e1e1;
-	padding: 5px 30px;
+    padding: 5px 20px 5px 30px;
 }
 .tieu-de {
 	text-align: center;
-	padding: 0 20px;
+	padding: 2px 20px;
 }
 .noi-dung {
 	color: #929292;
@@ -433,21 +458,50 @@ a.item-image:hover {
 	border-radius: 18px;
 }
 
-.description .text-box::-webkit-scrollbar-track
+.text-box-css::-webkit-scrollbar-track
 {
 	border-radius: 10px;
 	background-color: #F5F5F5;
-	margin: 10px;
 }
 
-.description .text-box::-webkit-scrollbar
+.text-box-css::-webkit-scrollbar
 {
 	width: 4px;
 	background-color: #F5F5F5;
 }
 
-.description .text-box::-webkit-scrollbar-thumb
+.text-box-css::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	background-color: #d7d7d7;
+}
+.tiki {
+	display: inline-flex;
+	margin-top: 27px;
+	margin-bottom: 14px;
+}
+.tiki-img{
+	padding: 80px 36px;
+	text-align: center;
+	background-color: #03b5e7;
+}
+.tiki-about {
+	padding: 25px;
+	background-color: #f6f6f6;
+}
+.tiki-about-01 {
+	width: 45%;
+}
+.tiki-about-02 {
+	width: 55%
+}
+.tiki-text {
+	padding: 11px 0;
+	display: inline-flex;
+}
+.ads-motor, .ads-drink {
+	width: 33.34%;
+}
+.ads-mobifone {
+	width: 33.32%;
 }
