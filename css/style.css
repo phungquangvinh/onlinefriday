@@ -314,13 +314,13 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
     display: block;
     width: 62.5%;
 }
-.partner button.owl-prev, .payment button.owl-prev {
+.partner button.owl-prev, .payment button.owl-prev, .deal-danh-sach button.owl-prev {
 	position: absolute;
 	bottom: 40%;
 	left: -2%;
 	outline: unset;
 }
-.partner button.owl-next, .payment button.owl-next {
+.partner button.owl-next, .payment button.owl-next, .deal-danh-sach button.owl-next {
 	position: absolute;
 	bottom: 40%;
 	right: -2%;
@@ -409,7 +409,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	width: 25%;
 	border: 1px solid #e1e1e1;
 }
-#deal-danh-cho-ban .deal-hot-danh-sach {
+#deal-danh-cho-ban .deal-hot-danh-sach, #deal-hot .deal-hot-danh-sach {
 	margin-top: 0;
 }
 .time-up .adayroi-image {
@@ -493,7 +493,8 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	width: 45%;
 }
 .tiki-about-02 {
-	width: 55%
+	width: 55%;
+	padding: 48px 0;
 }
 .tiki-text {
 	padding: 11px 0;
@@ -504,4 +505,39 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 }
 .ads-mobifone {
 	width: 33.32%;
+}
+.product {
+	width: 24%;
+	float: left;
+	border: 1px solid #e1e1e1;
+	margin: 10px 10px 0 0;
+}
+.product .chi-tiet {
+	margin: 0 15px 0 25px;
+}
+.product .chi-tiet p {
+	font-size: 16px;
+	color: #000;
+}
+.product .chi-tiet h5 {
+	margin-top: 15px;
+	font-size: 20px;
+	color: #eb7e00;
+}
+.image {
+	margin-top: 25px;
+}
+.adayroi {
+	background: url(../images/Rectangle4.png) no-repeat;
+	padding: 0 0 10px 10px
+}
+.logo-tiki {
+	background: url(../images/Rectangle-4-copy13.png) no-repeat;
+	padding: 0 0 10px 10px
+}
+.logo-tiki img {
+	width: 20%;
+}
+#product-17, #product-18, #product-19, #product-20, #product-21, #product-22 {
+	width: 100%;
 }

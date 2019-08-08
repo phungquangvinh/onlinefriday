@@ -51,6 +51,25 @@ $( document ).ready(function() {
 
 	$('.owl-carousel.partner-list').owlCarousel(options_list);
 
+	$('.owl-carousel.deal-danh-sach').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    navText: [`<i class="fa fa-angle-left" aria-hidden="true"></i>`,`<i class="fa fa-angle-right" aria-hidden="true"></i>`],
+	    dots: false,
+	    margin:10,
+	    responsive:{
+	        0:{
+	            items:2
+	        },
+	        768:{
+	            items:3
+	        },
+	        1024:{
+	            items:4
+	        }
+	    }
+	});
+
 	$('.owl-carousel.payment-list').owlCarousel({
 	    loop:true,
 	    nav:true,
