@@ -224,6 +224,19 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 .vou:hover {
 	background-color: #c1c1c1;
 }
+.vou:hover .voucher{
+	display: inline-block;
+	margin-left: 23px;
+}
+.voucher {
+	display: none;
+	text-align: center;
+}
+.vou .voucher a{
+	position: relative;
+	top: -150px;
+	border-radius: 5px;
+}
 .san-pham span{
 	padding: 5px 20px;
 	background-color: #f96a04;
