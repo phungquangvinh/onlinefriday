@@ -1,6 +1,3 @@
-.header {
-}
-
 .wrap_content {
 	width: 1200px;
 	margin: 0 auto;
@@ -124,6 +121,7 @@
 .slideshow {
 	background-image: url(../images/Layer_2.png);
 	height: 500px;
+	background-position: center;
 }
 .wrap-slide {
 	margin-left: 25%;
@@ -162,6 +160,9 @@
     text-align: center;
     color: #fff;
     font-size: 18px
+}
+.category:hover {
+	opacity: 0.8;
 }
 .title {
 	margin-top: 45px;
@@ -202,6 +203,9 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	padding: 2px 4px;
 	color: #ed1c24;
 }
+.deal-hot-trong-ngay h2 {
+	font-size: 20px;
+}
 .deal-hot-trong-ngay .date-time {
 	display: inherit;
     margin-left: 20px;
@@ -217,6 +221,9 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 }
 .deal {
 	height: 243px;
+}
+.deal:hover {
+	opacity: 0.6;
 }
 .vou {
 	height: 276px;
@@ -261,12 +268,16 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	position: relative;
 	top: 20px;
 }
+.a-day-roi #adayroi-logo {
+	position: relative; bottom: 23px; left: 10px
+}
 .chi-tiet-san-pham {
 	margin: 0 10px;
 }
 .chi-tiet-san-pham p {
 	font-size: 13px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	line-height: 16px;
 }
 .chi-tiet-san-pham span {
 	background-color: #fff;
@@ -396,7 +407,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	width: 25%;
 	border: 1px solid #e1e1e1;
 	text-align: center;
-	padding: 50px 0;
+	padding: 25px;
 }
 .description {
 	width: 50%;
@@ -404,6 +415,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 }
 .info {
 	margin-bottom: 25px;
+	line-height: 23px;
 }
 .description .text-box {
 	width: 100%;
@@ -422,7 +434,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	width: 25%;
 	border: 1px solid #e1e1e1;
 }
-#deal-danh-cho-ban .deal-hot-danh-sach, #deal-hot .deal-hot-danh-sach {
+#deal-danh-cho-ban .deal-hot-danh-sach {
 	margin-top: 0;
 }
 .time-up .adayroi-image {
@@ -439,7 +451,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 }
 .time-up .date-time p {
 	color: #fff;
-	padding: 2px 4px;
+	padding: 3px 4px;
 }
 .time-up .check-qr {
 	text-align: center;
@@ -471,23 +483,6 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	border-radius: 18px;
 }
 
-.text-box-css::-webkit-scrollbar-track
-{
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-
-.text-box-css::-webkit-scrollbar
-{
-	width: 4px;
-	background-color: #F5F5F5;
-}
-
-.text-box-css::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #d7d7d7;
-}
 .tiki {
 	display: inline-flex;
 	margin-top: 27px;
@@ -553,4 +548,179 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 }
 #product-17, #product-18, #product-19, #product-20, #product-21, #product-22 {
 	width: 100%;
+}
+
+/*Scroll bar*/
+.text-box-css::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.text-box-css::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+.text-box-css::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #d7d7d7;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin-bottom: 25px;
+}
+
+.mySlides img {
+	height: 256px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 2px;
+  margin-top: -50px;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+	left: 0;
+}
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: unset;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+	.wrap_content{
+		width: 100%;
+		padding-left: 5px; 
+	}
+	.popularly ul {
+		font-size: 13px
+	}
+	.category {
+		width: 25%;
+	}
+	.san-pham {
+		width: 15.8%;
+	}
+	.deal-hot-trong-ngay h2 {
+		font-size: 17px;
+	}
+	.item button.owl-next, .partner button.owl-next, .payment button.owl-next, .deal-danh-sach button.owl-next {
+		right: 0;
+	}
+	.item button.owl-prev, .partner button.owl-prev, .payment button.owl-prev, .deal-danh-sach button.owl-prev {
+		left: 0;
+	}
+	.chi-tiet-san-pham span h5{
+	    font-size: 14px;
+	}
+	.chi-tiet-san-pham span del {
+	    font-size: 13px;
+	}
+	.san-pham span {
+		left: 8px;
+	}
+	.submit-email {
+		margin: 0
+	}
+	.menu-footer ul {
+	    margin-right: 42px;
+	    list-style: none;
+	}
+	.deal-hot-trong-ngay .date-time {
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#search {
+		width: 69%
+	}
+	.category {
+		width: 33%;
+	}
+	.email {
+		width: 67%;
+	}
+	.menu-footer {
+		margin-left: 30px;
+	}
+	.popularly ul {
+		font-size: 12px;
+	}
+	.popularly li {
+	    padding-right: 9px;
+	}
+	.header-mid .fl-right {
+		float: left;
+	}
+	.notification {
+	    padding-left: 0;
+	}
+	.deal-hot-trong-ngay p {
+	    padding: 2px 3px;
+	}
+	.item-favourite {
+	    width: 57%;
+	}
+	.san-pham {
+	    width: 25%;
+	    margin: 25px;
+	}
+	.deal-hot-danh-sach a {
+	    float: left;
+	}
 }
