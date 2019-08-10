@@ -7,9 +7,6 @@ $( document ).ready(function() {
 	    dots: false,
 	    responsive:{
 	        0:{
-	            items:2
-	        },
-	        375:{
 	            items:4
 	        },
 	        768:{

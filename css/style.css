@@ -148,18 +148,22 @@
 }
 .danh-muc{
 }
+.category_box {
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    justify-content: space-between;
+}
 .category {
-	width: 20%;
-	padding-right: 15px;
-	float: left;
-	background-repeat: no-repeat;
+	margin-bottom: 20px;
 }
 .category p {
-	position: relative;
-    top: 40px;
+    position: absolute;
     text-align: center;
     color: #fff;
-    font-size: 18px
+    font-size: 18px;
+    width: calc(19% - 30px);
+    display: block;
+    margin-top: 15px;
 }
 .category:hover {
 	opacity: 0.8;
@@ -649,8 +653,11 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	.popularly ul {
 		font-size: 13px
 	}
-	.category {
-		width: 25%;
+	.category_box {
+	    grid-template-columns: 25% 25% 25% 25%;
+	}
+	.category p {
+		width: calc(25% - 30px);
 	}
 	.san-pham {
 		width: 15.8%;
@@ -689,8 +696,11 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	#search {
 		width: 69%
 	}
-	.category {
-		width: 33%;
+	.category_box {
+	    grid-template-columns: 33% 33% 33%;
+	}
+	.category p {
+		width: calc(33% - 30px);
 	}
 	.email {
 		width: 67%;
@@ -722,5 +732,125 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	}
 	.deal-hot-danh-sach a {
 	    float: left;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.wrap_content{
+		width: 90%;
+		padding:0; 
+	}
+	.header-top {
+		text-align: center;
+	}
+	.header-top .fl-right {
+		float: none;
+	}
+	#search {
+		width: 100%
+	}
+	.notification {
+		float: none;
+	}
+	.logo {
+		width: 40%;
+		margin: 0 10px 10px 0;
+	}
+	.logo img {
+		width: 100%
+	}
+	.header-mid .fl-right {
+		float: right;
+	}
+	.header-mid {
+		padding-bottom: 0;
+	}
+	.user {
+	    display: inline-flex;
+	    position: relative;
+	    bottom: 155px;
+	    width: 40%;
+	}
+	.menu ul {
+	    display: block;
+	}
+	.menu li {
+	    font-size: 16px;
+	    margin: 10px 0;
+	}
+	.wrap-slide {
+	    margin-left: 10%;
+	}
+	.wrap-slide .text-slide {
+		font-size: 40px;
+	}
+	.text-user {
+	    padding: 0px 4px;
+	}
+	.category_box {
+	    grid-template-columns: 49% 49%;
+	}
+	.category p {
+		width: calc(49% - 20px);
+	}
+	.category img {
+		width: 100%;
+	}
+	#footer {
+		padding-bottom: 20px
+	}
+	.footer-1, .footer-2 {
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.stamp {
+	    margin-bottom:0;
+	}
+	.stamp img {
+		width: 100%;
+	}
+	.menu-footer {
+	    margin-left: 0px;
+	}
+	.menu-footer li {
+	    padding: 5px 0;
+	}
+	.email {
+		width: 60%
+	}
+	.item-favourite {
+	    width: 100%;
+	}
+	.san-pham {
+	    width: 45%;
+	    margin: 8px;
+	}
+	.hinh-anh {
+	    height: 144px;
+	}
+	.chi-tiet-san-pham p {
+	    margin-bottom: 0px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.user {
+		bottom: 170px
+	}
+	.category_box {
+	    grid-template-columns: 99%;
+	}
+	.category p {
+		width: calc(99% - 30px);
+	}
+	.deal-hot-trong-ngay h2 {
+	    font-size: 13px;
+	}
+	.san-pham {
+	    margin: 7px;
+	}
+	.hinh-anh img {
+	    left: 0;
+	}
+	.san-pham span {
+	    padding: 5px;
 	}
 }
