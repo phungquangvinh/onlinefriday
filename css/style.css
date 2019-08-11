@@ -282,6 +282,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	font-size: 13px;
 	margin-bottom: 10px;
 	line-height: 16px;
+	color: #000;
 }
 .chi-tiet-san-pham span {
 	background-color: #fff;
@@ -299,7 +300,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
     font-size: 15px;
 }
 .deal-hot-danh-sach a {
-	padding: 5px 20px;
+	padding: 0;
 }
 #deal-danh-cho-ban .deal-hot-danh-sach a {
 	padding: 0;
@@ -310,7 +311,8 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	margin-top: 40px
 }
 .partner-logo:hover, .payment-logo:hover {
-	border-color: #ebebeb !important
+	border-color: #ebebeb !important;
+	opacity: 0.6
 }
 .partner .partner-logo {
     display: inline-block;
@@ -512,6 +514,9 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	padding: 11px 0;
 	display: inline-flex;
 }
+.advertise img {
+	width: 100%
+}
 .ads-motor, .ads-drink {
 	width: 33.34%;
 }
@@ -538,6 +543,9 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 }
 .image {
 	margin-top: 25px;
+}
+.image img {
+	width: 100%
 }
 .adayroi {
 	background: url(../images/Rectangle4.png) no-repeat;
@@ -586,6 +594,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 
 .mySlides img {
 	height: 256px;
+	width: 100%
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -847,8 +856,12 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	.san-pham {
 	    margin: 7px;
 	}
+	.hinh-anh {
+	    height: 124px;
+	}
 	.hinh-anh img {
 	    left: 0;
+	    top: 20px;
 	}
 	.san-pham span {
 	    padding: 5px;
