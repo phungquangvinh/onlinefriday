@@ -261,16 +261,14 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	margin-right: 0
 }
 .hinh-anh {
-	height: 160px;
+	height: 140px;
 }
 .hinh-anh img{
 	position: relative;
-    top: 40px;
+    top: 20px;
     left: 40px;
 }
 .a-day-roi {
-	position: relative;
-	top: 20px;
 }
 .a-day-roi #adayroi-logo {
 	position: relative; bottom: 23px; left: 10px
@@ -300,7 +298,7 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
     font-size: 15px;
 }
 .deal-hot-danh-sach a {
-	padding: 0;
+	padding: 5px 10px;
 }
 #deal-danh-cho-ban .deal-hot-danh-sach a {
 	padding: 0;
@@ -864,6 +862,6 @@ i.fa.fa-angle-left, i.fa.fa-angle-right {
 	    top: 20px;
 	}
 	.san-pham span {
-	    padding: 5px;
+	    padding: 2px;
 	}
 }
